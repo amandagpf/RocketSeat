@@ -77,12 +77,14 @@ ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s;
+    border-radius: 50%;
 }
 
 #social-icons a:hover{
     background: #ff009dc0;
     padding: 10px;
-    border-radius: 50%;
+    
 }
 
 footer{
