@@ -6,15 +6,16 @@
 
 :root{
     --bg--url: url(./imagens/background.png);
-    --text--color: rgb(0, 0, 0);
-    --border--list: 2px solid black;
-    --border--hover: 3.5px solid black;
+    --text--color: white;
+    --border--list: 2px solid #ffffffd5;
+    --border--hover: 3.5px solid #ffffffd5;
     --bg--list: rgba(236, 97, 183, 0.322);
-    --bg--hover: #f7daed;
+    --bg--hover: #ff009dc0;
     --text--shadow: 2px 2px 5px #ff009dc0;
-    --bg--icons: #f7daed; 
+    --bg--icons: #ff009dc0; 
     --switch-bg-url: url(./assets/sun.svg);
     --bg-span-hover: rgba(236, 97, 183, 0.322);
+    --box--shadow:4px 4px 8px rgb(0, 0, 0);
 }
 
 .dark{
@@ -22,12 +23,13 @@
     --text--color: white;
     --border--list: 2px solid #ffffffd5;
     --border--hover: 3.5px solid #ffffffd5;
-    --bg--list: #a72073c0;
-    --bg--hover: #ff009dc0;
-    --text--shadow: 2px 2px 5px white;
-    --bg--icons: #ff009dc0; 
+    --bg--list: #242323c0;
+    --bg--hover: rgba(236, 97, 183, 0.322);
+    --text--shadow: 2px 2px 5px rgb(0, 0, 0);
+    --bg--icons: rgba(236, 97, 183, 0.322); 
     --switch-bg-url: url(./assets/moon-stars.svg);
-    --bg-span-hover: #a72073c0;;
+    --bg-span-hover: #242323c0;
+    --box--shadow: 4px 4px 8px rgb(0, 0, 0);
 }
 
 body{
@@ -62,7 +64,7 @@ body *{
     position: relative;
     width: 64px;
     margin: 4px auto;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 #switch button{
@@ -112,7 +114,7 @@ ul li a{
     background: var(--bg--list);
     border: var(--border--list);
     border-radius: 8px;
-
+    box-shadow: var(--box--shadow);
 
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
