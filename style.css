@@ -4,29 +4,64 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg--url: url(./imagens/background.png);
+    --text--color: rgb(0, 0, 0);
+    --border--list: 2px solid black;
+    --border--hover: 3.5px solid black;
+    --bg--list: rgba(236, 97, 183, 0.322);
+    --bg--hover: #f7daed;
+    --text--shadow: 2px 2px 5px #ff009dc0;
+    --bg--icons: #f7daed; 
+}
+
+.dark{
+    --bg--url: url(./imagens/backgrounddark.png);
+    --text--color: white;
+    --border--list: 2px solid #ffffffd5;
+    --border--hover: 3.5px solid #ffffffd5;
+    --bg--list: #a72073c0;
+    --bg--hover: #ff009dc0;
+    --text--shadow: 2px 2px 5px white;
+    --bg--icons: #ff009dc0; 
+}
+
 body{
-    background: url(./imagens/background.png) no-repeat top center/cover;
+    background: var(--bg--url) no-repeat top center/cover;
 }
 
 body *{
     font-family: 'Shantell Sans', cursive;
-    color: rgb(255, 255, 255);
+    color: var(--text--color);
 }
 
 #container{
-    width: 100%;
-    margin: 56px auto 0px;
+    width: 80%;
+    margin-top: 56px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0 24px;
 }
 
 #profile{
     text-align: center;
     font-size: 24px;
-    text-shadow: 2px 2px 5px #ff009de7;
+    text-shadow: var(--text--shadow);
     padding-bottom: 10px;
 }
 
 #profile img{
-    width: 150px;
+    width: 50%;
+}
+
+#switch{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#switch{
+    
 }
 
 ul{
@@ -34,8 +69,6 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 ul li a{
@@ -45,8 +78,8 @@ ul li a{
 
     padding: 16px 24px;
 
-    background: #ff009d52;
-    border: 2px solid #ffffffd5;
+    background: var(--bg--list);
+    border: var(--border--list);
     border-radius: 8px;
 
 
@@ -61,8 +94,8 @@ ul li a{
 }
 
 ul li a:hover{
-    background: #ff009dc0;
-    border: 3.5px solid #ffffffd5;
+    background: var(--bg--hover);
+    border: var(--border--hover);
 }
 
 #social-icons{
@@ -82,7 +115,7 @@ ul li a:hover{
 }
 
 #social-icons a:hover{
-    background: #ff009dc0;
+    background: var(--bg--icons);
     padding: 10px;
     
 }
